@@ -31,6 +31,8 @@ function delivery_area_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'gmap';
+  $handler->display->display_options['style_options']['markers'] = 'taxonomy';
+  $handler->display->display_options['style_options']['markertype'] = 'services';
   $handler->display->display_options['style_options']['latfield'] = 'title';
   $handler->display->display_options['style_options']['lonfield'] = 'title';
   $handler->display->display_options['style_options']['markerfield'] = 'title';
