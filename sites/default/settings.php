@@ -212,7 +212,21 @@
  *   );
  * @endcode
  */
-$databases = array();
+$databases = array (
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'database' => 'wallstreetpizza',
+      'username' => 'admin_pizza',
+      'password' => 'pizzadmin',
+      'host' => '127.0.0.1',
+      'port' => '8889',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
 
 /**
  * Access control for update.php script.
@@ -244,7 +258,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = '';
+$drupal_hash_salt = '52llJJToGzWARnwZJ_J1IZYWQd96vkPcwMyB4q-aEK4';
 
 /**
  * Base URL (optional).
