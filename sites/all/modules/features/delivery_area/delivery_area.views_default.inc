@@ -31,7 +31,7 @@ function delivery_area_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'gmap';
-  $handler->display->display_options['style_options']['markers'] = 'taxonomy';
+  $handler->display->display_options['style_options']['markers'] = 'nodetype';
   $handler->display->display_options['style_options']['markertype'] = 'services';
   $handler->display->display_options['style_options']['latfield'] = 'title';
   $handler->display->display_options['style_options']['lonfield'] = 'title';
@@ -51,6 +51,25 @@ function delivery_area_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Location: Street */
+  $handler->display->display_options['fields']['street']['id'] = 'street';
+  $handler->display->display_options['fields']['street']['table'] = 'location';
+  $handler->display->display_options['fields']['street']['field'] = 'street';
+  $handler->display->display_options['fields']['street']['label'] = '';
+  $handler->display->display_options['fields']['street']['element_label_colon'] = FALSE;
+  /* Field: Location: City */
+  $handler->display->display_options['fields']['city']['id'] = 'city';
+  $handler->display->display_options['fields']['city']['table'] = 'location';
+  $handler->display->display_options['fields']['city']['field'] = 'city';
+  $handler->display->display_options['fields']['city']['label'] = '';
+  $handler->display->display_options['fields']['city']['element_label_colon'] = FALSE;
+  /* Field: Location: Province */
+  $handler->display->display_options['fields']['province']['id'] = 'province';
+  $handler->display->display_options['fields']['province']['table'] = 'location';
+  $handler->display->display_options['fields']['province']['field'] = 'province';
+  $handler->display->display_options['fields']['province']['label'] = '';
+  $handler->display->display_options['fields']['province']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['province']['style'] = 'code';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
