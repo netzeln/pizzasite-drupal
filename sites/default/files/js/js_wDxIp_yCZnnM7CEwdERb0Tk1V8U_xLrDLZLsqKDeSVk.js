@@ -680,3 +680,4 @@ Drupal.behaviors.GMap = {
     //   fillColor: '#BBD8E9',
     //   fillOpacity: 0.6
     // });
+;

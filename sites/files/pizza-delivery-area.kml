@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+	<name>pizza-delivery-area.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>73a0d693</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>739dd390</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>73a0d693</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>739dd390</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Delivery Area</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-122.5790195430138,45.47207941199313,0 -122.5256670865584,45.47289552586423,0 -122.5258955045269,45.47703586396857,0 -122.5139037336399,45.47788037457361,0 -122.510507665498,45.52015201451511,0 -122.5235510140083,45.51909101392668,0 -122.5225624217476,45.53380193052403,0 -122.5375954548334,45.53368319618224,0 -122.5376227999831,45.53967072848766,0 -122.559635368744,45.53954412373841,0 -122.5602634685607,45.53633855228581,0 -122.5627519688981,45.53394665936749,0 -122.5671481381259,45.53176904517802,0 -122.5719349469461,45.53138344853848,0 -122.5851580624221,45.53542389017312,0 -122.5887124255289,45.53533424253038,0 -122.594155878897,45.53289864807501,0 -122.5941881372482,45.51929608147969,0 -122.6099421477012,45.51937485502184,0 -122.6089866556937,45.49030274121971,0 -122.5953046894756,45.4903740137567,0 -122.5944163356307,45.47924470016718,0 -122.578962569329,45.47955778645304,0 -122.5790195430138,45.47207941199313,0
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
