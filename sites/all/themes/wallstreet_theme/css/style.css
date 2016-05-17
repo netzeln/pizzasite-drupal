@@ -48,7 +48,7 @@ body:before {
       background-image: linear-gradient(left, transparent 0, #EEEEEE 0, #EEEEEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEEEEE 8.51064%, #EEEEEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEEEEE 17.02128%, #EEEEEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEEEEE 25.53191%, #EEEEEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEEEEE 34.04255%, #EEEEEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEEEEE 42.55319%, #EEEEEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEEEEE 51.06383%, #EEEEEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEEEEE 59.57447%, #EEEEEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEEEEE 68.08511%, #EEEEEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEEEEE 76.59574%, #EEEEEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEEEEE 85.10638%, #EEEEEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEEEEE 93.61702%, #EEEEEE 100.0%, transparent 100.0%); } }
 
 body {
-  background-color: white;
+  background-color: gray;
   margin: 0;
   font-size: 16px;
   line-height: 1.5em;
