@@ -3,6 +3,7 @@
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <link href='https://fonts.googleapis.com/css?family=Kadwa' rel='stylesheet' type='text/css'>
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
