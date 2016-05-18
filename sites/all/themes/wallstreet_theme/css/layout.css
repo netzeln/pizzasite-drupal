@@ -90,7 +90,8 @@ body:before {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 125.53191%;
+    width: 100%;
+    margin-left: 25.53191%;
   }
   .no-sidebars #content:last-child {
     margin-right: 0;
