@@ -202,7 +202,7 @@
     display: block;
     margin-right: 2.12766%;
     width: 48.93617%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .drinks-section:last-child {
     margin-right: 0;
@@ -216,7 +216,7 @@
     margin-right: 2.12766%;
     width: 48.93617%;
     margin-right: 11px !important;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .pizzas-section:last-child {
     margin-right: 0;
@@ -229,7 +229,7 @@
     display: block;
     margin-right: 2.12766%;
     width: 48.93617%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .sandwiches-section:last-child {
     margin-right: 0;
@@ -242,7 +242,7 @@
     display: block;
     margin-right: 2.12766%;
     width: 48.93617%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .calzones-section:last-child {
     margin-right: 0;
@@ -255,7 +255,7 @@
     display: block;
     margin-right: 2.12766%;
     width: 48.93617%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .sides-section:last-child {
     margin-right: 0;
