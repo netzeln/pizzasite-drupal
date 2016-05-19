@@ -277,9 +277,21 @@ body:before {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 40.42553%;
+    width: 48.93617%;
   }
   .sandwiches-section:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .calzones-section {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+  }
+  .calzones-section:last-child {
     margin-right: 0;
   }
 }
