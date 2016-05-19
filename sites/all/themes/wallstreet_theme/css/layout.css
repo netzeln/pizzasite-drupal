@@ -351,4 +351,8 @@ body:before {
   display: inline-block;
 }
 
+.block .title {
+  float: left;
+}
+
 /*# sourceMappingURL=layout.css.map */
