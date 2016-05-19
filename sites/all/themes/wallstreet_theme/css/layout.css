@@ -352,7 +352,7 @@ body:before {
 }
 
 .block .title {
-  float: left;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=layout.css.map */
