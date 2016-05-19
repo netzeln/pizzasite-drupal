@@ -196,6 +196,11 @@ div.status {
 }
 #navigation ul a {
   color: #8E001C;
+  font-size: 16px;
+}
+#navigation ul a:hover {
+  text-decoration: none;
+  border-bottom: solid 9px #FBF7E4;
 }
 
 .drinks-section {
