@@ -330,7 +330,7 @@ body:before {
 }
 
 @media screen and (min-width: 60em) {
-  .header img {
+  #header img {
     margin-left: 6.77966%;
   }
 }
