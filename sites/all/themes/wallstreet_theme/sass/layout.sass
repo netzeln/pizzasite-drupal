@@ -127,6 +127,10 @@
     @include span-columns(6.5)
     overflow-x: hidden
 
+.header
+  img
+    @include media($desktop)
+      @include shift(1)
 #footer
   float: none
   clear: both

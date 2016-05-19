@@ -329,6 +329,12 @@ body:before {
   }
 }
 
+@media screen and (min-width: 60em) {
+  .header img {
+    margin-left: 6.77966%;
+  }
+}
+
 #footer {
   float: none;
   clear: both;
