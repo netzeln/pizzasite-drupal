@@ -209,8 +209,17 @@
   }
 }
 
-.salads-section {
-  overflow-x: hidden;
+@media screen and (min-width: 60em) {
+  .salads-section {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+    overflow-x: hidden;
+  }
+  .salads-section:last-child {
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 60em) {
