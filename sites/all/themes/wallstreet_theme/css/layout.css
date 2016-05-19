@@ -130,6 +130,9 @@
   }
 }
 
+#sidebar-first {
+  background-color: #FBF7E4;
+}
 @media screen and (min-width: 20em) {
   #sidebar-first {
     width: 100%;
