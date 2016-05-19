@@ -1,0 +1,5 @@
+name = Manager View
+description = Adjust Manager view so only appropriate fields show.
+core = 7.x
+package = custom menu items
+files[] = manager_view.module
