@@ -1,0 +1,5 @@
+name = Pizza Builder
+description = Calculate the cost of a pizza
+core = 7.x
+package = custom menu items
+files[] = pizzabuilder.module

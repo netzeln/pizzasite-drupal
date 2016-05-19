@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Store Locations feature.
+ */
+
+include_once 'store_locations.features.inc';
