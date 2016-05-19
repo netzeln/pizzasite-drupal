@@ -14,12 +14,12 @@ body {
 }
 
 a:link, a:visited {
-  color: blue;
+  color: #8E001C;
   text-decoration: none;
 }
 
 a:hover, a:active {
-  color: red;
+  color: #E85D5F;
   text-decoration: underline;
 }
 
