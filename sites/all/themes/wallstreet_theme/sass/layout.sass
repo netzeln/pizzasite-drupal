@@ -63,7 +63,7 @@
     @include media($desktop)
       @include span-columns(8)
       // Shift it to the right 2 columns to accommodate for the first sidebar.
-      @include shift(3)
+      @include shift(2)
 
 #sidebar-first
   background-color: #FBF7E4
@@ -80,7 +80,7 @@
     // Span this div 2 columns wide.
     @include span-columns(3)
     // Shift it to the left 9 columns to place it in the far left column.
-    @include shift(-11)
+    @include shift(-12)
     .sidebar-first &
       @include shift(-15)
 
@@ -95,7 +95,7 @@
   @include media($desktop)
     // Span this div 3 columns wide.
     @include span-columns(3)
-    @include shift(2)
+    @include shift(1)
 
 .drinks-section
   @include media($desktop)
