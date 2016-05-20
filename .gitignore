@@ -1,7 +1,7 @@
 # Ignore paths that contain user-generated content.
 xxxx/sites/*/filesxxxx
 /sites/*/private
-xxxx/files/*xxxx
+
 /cache
 /sites/all/themes/wallstreet_theme/grunt/node_modules
 
