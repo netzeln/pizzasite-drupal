@@ -1,5 +1,5 @@
 # Ignore paths that contain user-generated content.
-/sites/*/files
+xxxx/sites/*/filesxxxx
 /sites/*/private
 /files/*
 /cache
@@ -13,13 +13,13 @@
 ############
 *.7z
 *.dmg
-*.gz
+xxxx*.gzxxxxx
 *.bz2
 *.iso
 *.jar
 *.rar
 *.tar
-*.zip
+xxxx*.zipxxxx
 *.tgz
 
 # Logs and databases #
