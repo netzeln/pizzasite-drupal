@@ -91,4 +91,11 @@ div.block:hover .edit {
   display: block;
 }
 
+ul {
+  list-style: none;
+}
+ul li {
+  list-style: none;
+}
+
 /*# sourceMappingURL=default.css.map */
