@@ -1,4 +1,10 @@
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
   margin: 0;
   padding: 0;
 }
@@ -89,6 +95,23 @@ div.block .edit a {
 }
 div.block:hover .edit {
   display: block;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  list-style: none;
+}
+
+input[type="submit"] {
+  background-color: inherit;
+  padding: 1rem;
+  border: 3px solid #2F5409;
+  border-radius: 10px;
+}
+input[type="submit"]:hover {
+  background-color: #DBD1A5;
 }
 
 /*# sourceMappingURL=default.css.map */

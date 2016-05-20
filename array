@@ -1,0 +1,1231 @@
+rray
+(
+    [#node_edit_form] => 1
+    [#attributes] => Array
+        (
+            [class] => Array
+                (
+                    [0] => node-form
+                    [1] => node-product-form
+                )
+
+        )
+
+    [nid] => Array
+        (
+            [#type] => value
+            [#value] =>
+        )
+
+    [vid] => Array
+        (
+            [#type] => value
+            [#value] =>
+        )
+
+    [uid] => Array
+        (
+            [#type] => value
+            [#value] => 1
+        )
+
+    [created] => Array
+        (
+            [#type] => value
+            [#value] => 1463695278
+        )
+
+    [type] => Array
+        (
+            [#type] => value
+            [#value] => product
+        )
+
+    [language] => Array
+        (
+            [#type] => value
+            [#value] => und
+        )
+
+    [changed] => Array
+        (
+            [#type] => hidden
+            [#default_value] =>
+        )
+
+    [title] => Array
+        (
+            [#type] => textfield
+            [#title] => Name
+            [#required] => 1
+            [#default_value] =>
+            [#maxlength] => 255
+            [#weight] => -5
+        )
+
+    [base] => Array
+        (
+            [#type] => fieldset
+            [#title] => Product information
+            [#collapsible] => 1
+            [#collapsed] => 1
+            [#weight] => -10
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => product-field
+                        )
+
+                )
+
+            [#group] => additional_settings
+            [#attached] => Array
+                (
+                    [js] => Array
+                        (
+                            [vertical-tabs] => sites/all/modules/ubercart/uc_product/uc_product.js
+                        )
+
+                )
+
+            [model] => Array
+                (
+                    [#type] => textfield
+                    [#title] => SKU
+                    [#required] => 1
+                    [#default_value] =>
+                    [#description] => Product SKU/model.
+                    [#weight] => 0
+                    [#size] => 32
+                )
+
+            [prices] => Array
+                (
+                    [#type] => container
+                    [#attributes] => Array
+                        (
+                            [class] => Array
+                                (
+                                    [0] => uc-inline-form
+                                    [1] => clearfix
+                                )
+
+                        )
+
+                    [#weight] => 5
+                    [list_price] => Array
+                        (
+                            [#type] => hidden
+                            [#title] => List price
+                            [#default_value] => 0
+                            [#description] => The listed MSRP.
+                            [#weight] => 0
+                        )
+
+                    [cost] => Array
+                        (
+                            [#type] => hidden
+                            [#title] => Cost
+                            [#default_value] => 0
+                            [#description] => Your store's cost.
+                            [#weight] => 1
+                        )
+
+                    [sell_price] => Array
+                        (
+                            [#type] => uc_price
+                            [#title] => Sell price
+                            [#required] => 1
+                            [#default_value] => 0
+                            [#description] => Customer purchase price.
+                            [#weight] => 2
+                        )
+
+                )
+
+            [shippable] => Array
+                (
+                    [#type] => hidden
+                    [#title] => Product is shippable.
+                    [#default_value] => 0
+                    [#weight] => 10
+                )
+
+            [weight] => Array
+                (
+                    [#type] => container
+                    [#attributes] => Array
+                        (
+                            [class] => Array
+                                (
+                                    [0] => uc-inline-form
+                                    [1] => clearfix
+                                )
+
+                        )
+
+                    [#states] => Array
+                        (
+                            [invisible] => Array
+                                (
+                                    [input[name="shippable"]] => Array
+                                        (
+                                            [checked] =>
+                                        )
+
+                                )
+
+                        )
+
+                    [#weight] => 15
+                    [weight] => Array
+                        (
+                            [#type] => textfield
+                            [#title] => Weight
+                            [#default_value] => 0
+                            [#size] => 10
+                            [#element_validate] => Array
+                                (
+                                    [0] => uc_store_validate_number
+                                )
+
+                        )
+
+                    [weight_units] => Array
+                        (
+                            [#type] => select
+                            [#title] => Units
+                            [#default_value] => lb
+                            [#options] => Array
+                                (
+                                    [lb] => Pounds
+                                    [kg] => Kilograms
+                                    [oz] => Ounces
+                                    [g] => Grams
+                                )
+
+                        )
+
+                )
+
+            [dimensions] => Array
+                (
+                    [#type] => container
+                    [#attributes] => Array
+                        (
+                            [class] => Array
+                                (
+                                    [0] => uc-inline-form
+                                    [1] => clearfix
+                                )
+
+                        )
+
+                    [#states] => Array
+                        (
+                            [invisible] => Array
+                                (
+                                    [input[name="shippable"]] => Array
+                                        (
+                                            [checked] =>
+                                        )
+
+                                )
+
+                        )
+
+                    [#weight] => 20
+                    [dim_length] => Array
+                        (
+                            [#type] => textfield
+                            [#title] => Length
+                            [#default_value] => 0
+                            [#size] => 10
+                            [#element_validate] => Array
+                                (
+                                    [0] => uc_store_validate_number
+                                )
+
+                        )
+
+                    [dim_width] => Array
+                        (
+                            [#type] => textfield
+                            [#title] => Width
+                            [#default_value] => 0
+                            [#size] => 10
+                            [#element_validate] => Array
+                                (
+                                    [0] => uc_store_validate_number
+                                )
+
+                        )
+
+                    [dim_height] => Array
+                        (
+                            [#type] => textfield
+                            [#title] => Height
+                            [#default_value] => 0
+                            [#size] => 10
+                            [#element_validate] => Array
+                                (
+                                    [0] => uc_store_validate_number
+                                )
+
+                        )
+
+                    [length_units] => Array
+                        (
+                            [#type] => select
+                            [#title] => Units
+                            [#options] => Array
+                                (
+                                    [in] => Inches
+                                    [ft] => Feet
+                                    [cm] => Centimeters
+                                    [mm] => Millimeters
+                                )
+
+                            [#default_value] => in
+                        )
+
+                )
+
+            [pkg_qty] => Array
+                (
+                    [#type] => uc_quantity
+                    [#title] => Maximum package quantity
+                    [#default_value] => 1
+                    [#description] => At most, how many of these items can fit in your largest box? Orders that exceed this value will be split into multiple packages when retrieving shipping quotes.
+                    [#weight] => 25
+                    [#states] => Array
+                        (
+                            [invisible] => Array
+                                (
+                                    [input[name="shippable"]] => Array
+                                        (
+                                            [checked] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [default_qty] => Array
+                (
+                    [#type] => value
+                    [#value] => 1
+                )
+
+            [ordering] => Array
+                (
+                    [#type] => hidden
+                    [#title] => List position
+                    [#description] => Specify a value to set this product's position in product lists.
+Products in the same position will be sorted alphabetically.
+                    [#delta] => 25
+                    [#default_value] => 0
+                    [#weight] => 30
+                )
+
+        )
+
+    [#node] => stdClass Object
+        (
+            [uid] => 1
+            [name] => admin
+            [type] => product
+            [language] => und
+            [title] =>
+            [status] => 1
+            [promote] => 0
+            [sticky] => 0
+            [created] => 1463695278
+            [revision] =>
+            [model] =>
+            [list_price] => 0
+            [cost] => 0
+            [sell_price] => 0
+            [weight] => 0
+            [weight_units] => lb
+            [length] => 0
+            [width] => 0
+            [height] => 0
+            [length_units] => in
+            [pkg_qty] => 1
+            [default_qty] => 1
+            [shippable] => 0
+            [ordering] => 0
+            [comment] => 1
+            [menu] => Array
+                (
+                    [link_title] =>
+                    [mlid] => 0
+                    [plid] => 0
+                    [menu_name] => main-menu
+                    [weight] => 0
+                    [options] => Array
+                        (
+                        )
+
+                    [module] => menu
+                    [expanded] => 0
+                    [hidden] => 0
+                    [has_children] => 0
+                    [customized] => 0
+                    [parent_depth_limit] => 8
+                )
+
+        )
+
+    [additional_settings] => Array
+        (
+            [#type] => vertical_tabs
+            [#weight] => 99
+        )
+
+    [revision_information] => Array
+        (
+            [#type] => fieldset
+            [#title] => Revision information
+            [#collapsible] => 1
+            [#collapsed] => 1
+            [#group] => additional_settings
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => node-form-revision-information
+                        )
+
+                )
+
+            [#attached] => Array
+                (
+                    [js] => Array
+                        (
+                            [0] => modules/node/node.js
+                        )
+
+                )
+
+            [#weight] => 20
+            [#access] => 1
+            [revision] => Array
+                (
+                    [#type] => checkbox
+                    [#title] => Create new revision
+                    [#default_value] =>
+                    [#access] => 1
+                    [#states] => Array
+                        (
+                            [checked] => Array
+                                (
+                                    [textarea[name="log"]] => Array
+                                        (
+                                            [empty] =>
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [log] => Array
+                (
+                    [#type] => textarea
+                    [#title] => Revision log message
+                    [#rows] => 4
+                    [#default_value] =>
+                    [#description] => Provide an explanation of the changes you are making. This will help other authors understand your motivations.
+                )
+
+        )
+
+    [author] => Array
+        (
+            [#type] => fieldset
+            [#access] => 1
+            [#title] => Authoring information
+            [#collapsible] => 1
+            [#collapsed] => 1
+            [#group] => additional_settings
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => node-form-author
+                        )
+
+                )
+
+            [#attached] => Array
+                (
+                    [js] => Array
+                        (
+                            [0] => modules/node/node.js
+                            [1] => Array
+                                (
+                                    [type] => setting
+                                    [data] => Array
+                                        (
+                                            [anonymous] => Anonymous
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [#weight] => 90
+            [name] => Array
+                (
+                    [#type] => textfield
+                    [#title] => Authored by
+                    [#maxlength] => 60
+                    [#autocomplete_path] => user/autocomplete
+                    [#default_value] => admin
+                    [#weight] => -1
+                    [#description] => Leave blank for Anonymous.
+                )
+
+            [date] => Array
+                (
+                    [#type] => textfield
+                    [#title] => Authored on
+                    [#maxlength] => 25
+                    [#description] => Format: 2016-05-19 15:01:18 -0700. The date format is YYYY-MM-DD and -0700 is the time zone offset from UTC. Leave blank to use the time of form submission.
+                    [#default_value] =>
+                )
+
+        )
+
+    [options] => Array
+        (
+            [#type] => fieldset
+            [#access] => 1
+            [#title] => Publishing options
+            [#collapsible] => 1
+            [#collapsed] => 1
+            [#group] => additional_settings
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => node-form-options
+                        )
+
+                )
+
+            [#attached] => Array
+                (
+                    [js] => Array
+                        (
+                            [0] => modules/node/node.js
+                        )
+
+                )
+
+            [#weight] => 95
+            [status] => Array
+                (
+                    [#type] => checkbox
+                    [#title] => Published
+                    [#default_value] => 1
+                )
+
+            [promote] => Array
+                (
+                    [#type] => checkbox
+                    [#title] => Promoted to front page
+                    [#default_value] => 0
+                )
+
+            [sticky] => Array
+                (
+                    [#type] => checkbox
+                    [#title] => Sticky at top of lists
+                    [#default_value] => 0
+                )
+
+        )
+
+    [actions] => Array
+        (
+            [#type] => actions
+            [submit] => Array
+                (
+                    [#type] => submit
+                    [#access] => 1
+                    [#value] => Save
+                    [#weight] => 5
+                    [#submit] => Array
+                        (
+                            [0] => node_form_submit
+                        )
+
+                )
+
+            [preview] => Array
+                (
+                    [#access] => 1
+                    [#type] => submit
+                    [#value] => Preview
+                    [#weight] => 10
+                    [#submit] => Array
+                        (
+                            [0] => node_form_build_preview
+                        )
+
+                )
+
+        )
+
+    [#validate] => Array
+        (
+            [0] => node_form_validate
+        )
+
+    [#submit] => Array
+        (
+        )
+
+    [#parents] => Array
+        (
+        )
+
+    [#entity] => stdClass Object
+        (
+            [uid] => 1
+            [name] => admin
+            [type] => product
+            [language] => und
+            [title] =>
+            [status] => 1
+            [promote] => 0
+            [sticky] => 0
+            [created] => 1463695278
+            [revision] =>
+            [model] =>
+            [list_price] => 0
+            [cost] => 0
+            [sell_price] => 0
+            [weight] => 0
+            [weight_units] => lb
+            [length] => 0
+            [width] => 0
+            [height] => 0
+            [length_units] => in
+            [pkg_qty] => 1
+            [default_qty] => 1
+            [shippable] => 0
+            [ordering] => 0
+            [comment] => 1
+            [menu] => Array
+                (
+                    [link_title] =>
+                    [mlid] => 0
+                    [plid] => 0
+                    [menu_name] => main-menu
+                    [weight] => 0
+                    [options] => Array
+                        (
+                        )
+
+                    [module] => menu
+                    [expanded] => 0
+                    [hidden] => 0
+                    [has_children] => 0
+                    [customized] => 0
+                    [parent_depth_limit] => 8
+                )
+
+        )
+
+    [body] => Array
+        (
+            [#type] => container
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => field-type-text-with-summary
+                            [1] => field-name-body
+                            [2] => field-widget-text-textarea-with-summary
+                        )
+
+                )
+
+            [#weight] => -4
+            [#tree] => 1
+            [#language] => und
+            [und] => Array
+                (
+                    [0] => Array
+                        (
+                            [#entity_type] => node
+                            [#entity] => stdClass Object
+                                (
+                                    [uid] => 1
+                                    [name] => admin
+                                    [type] => product
+                                    [language] => und
+                                    [title] =>
+                                    [status] => 1
+                                    [promote] => 0
+                                    [sticky] => 0
+                                    [created] => 1463695278
+                                    [revision] =>
+                                    [model] =>
+                                    [list_price] => 0
+                                    [cost] => 0
+                                    [sell_price] => 0
+                                    [weight] => 0
+                                    [weight_units] => lb
+                                    [length] => 0
+                                    [width] => 0
+                                    [height] => 0
+                                    [length_units] => in
+                                    [pkg_qty] => 1
+                                    [default_qty] => 1
+                                    [shippable] => 0
+                                    [ordering] => 0
+                                    [comment] => 1
+                                    [menu] => Array
+                                        (
+                                            [link_title] =>
+                                            [mlid] => 0
+                                            [plid] => 0
+                                            [menu_name] => main-menu
+                                            [weight] => 0
+                                            [options] => Array
+                                                (
+                                                )
+
+                                            [module] => menu
+                                            [expanded] => 0
+                                            [hidden] => 0
+                                            [has_children] => 0
+                                            [customized] => 0
+                                            [parent_depth_limit] => 8
+                                        )
+
+                                )
+
+                            [#bundle] => product
+                            [#field_name] => body
+                            [#language] => und
+                            [#field_parents] => Array
+                                (
+                                )
+
+                            [#columns] => Array
+                                (
+                                    [0] => value
+                                    [1] => summary
+                                    [2] => format
+                                )
+
+                            [#title] => Description
+                            [#description] =>
+                            [#required] =>
+                            [#delta] => 0
+                            [#weight] => 0
+                            [#type] => text_format
+                            [#default_value] =>
+                            [#rows] => 20
+                            [#attributes] => Array
+                                (
+                                    [class] => Array
+                                        (
+                                            [0] => text-full
+                                        )
+
+                                )
+
+                            [#format] =>
+                            [#base_type] => textarea
+                            [summary] => Array
+                                (
+                                    [#type] => textarea
+                                    [#default_value] =>
+                                    [#title] => Summary
+                                    [#rows] => 5
+                                    [#description] => Leave blank to use trimmed value of full text as the summary.
+                                    [#attached] => Array
+                                        (
+                                            [js] => Array
+                                                (
+                                                    [0] => modules/field/modules/text/text.js
+                                                )
+
+                                        )
+
+                                    [#attributes] => Array
+                                        (
+                                            [class] => Array
+                                                (
+                                                    [0] => text-summary
+                                                )
+
+                                        )
+
+                                    [#prefix] =>
+
+                                    [#suffix] =>
+
+                                    [#weight] => -10
+                                )
+
+                        )
+
+                    [#theme] => field_multiple_value_form
+                    [#field_name] => body
+                    [#cardinality] => 1
+                    [#title] => Description
+                    [#required] =>
+                    [#description] =>
+                    [#prefix] =>
+
+                    [#suffix] =>
+
+                    [#max_delta] => 0
+                    [#after_build] => Array
+                        (
+                            [0] => field_form_element_after_build
+                        )
+
+                    [#language] => und
+                    [#field_parents] => Array
+                        (
+                        )
+
+                )
+
+            [#access] => 1
+        )
+
+    [uc_product_image] => Array
+        (
+            [#type] => container
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => field-type-image
+                            [1] => field-name-uc-product-image
+                            [2] => field-widget-image-image
+                        )
+
+                )
+
+            [#weight] => -3
+            [#tree] => 1
+            [#language] => und
+            [und] => Array
+                (
+                    [0] => Array
+                        (
+                            [#entity] => stdClass Object
+                                (
+                                    [uid] => 1
+                                    [name] => admin
+                                    [type] => product
+                                    [language] => und
+                                    [title] =>
+                                    [status] => 1
+                                    [promote] => 0
+                                    [sticky] => 0
+                                    [created] => 1463695278
+                                    [revision] =>
+                                    [model] =>
+                                    [list_price] => 0
+                                    [cost] => 0
+                                    [sell_price] => 0
+                                    [weight] => 0
+                                    [weight_units] => lb
+                                    [length] => 0
+                                    [width] => 0
+                                    [height] => 0
+                                    [length_units] => in
+                                    [pkg_qty] => 1
+                                    [default_qty] => 1
+                                    [shippable] => 0
+                                    [ordering] => 0
+                                    [comment] => 1
+                                    [menu] => Array
+                                        (
+                                            [link_title] =>
+                                            [mlid] => 0
+                                            [plid] => 0
+                                            [menu_name] => main-menu
+                                            [weight] => 0
+                                            [options] => Array
+                                                (
+                                                )
+
+                                            [module] => menu
+                                            [expanded] => 0
+                                            [hidden] => 0
+                                            [has_children] => 0
+                                            [customized] => 0
+                                            [parent_depth_limit] => 8
+                                        )
+
+                                )
+
+                            [#entity_type] => node
+                            [#bundle] => product
+                            [#field_name] => uc_product_image
+                            [#language] => und
+                            [#field_parents] => Array
+                                (
+                                )
+
+                            [#columns] => Array
+                                (
+                                    [0] => fid
+                                    [1] => alt
+                                    [2] => title
+                                    [3] => width
+                                    [4] => height
+                                )
+
+                            [#title] => Image
+                            [#description] =>
+                            [#required] =>
+                            [#delta] => 0
+                            [#type] => managed_file
+                            [#upload_location] => public://
+                            [#upload_validators] => Array
+                                (
+                                    [file_validate_size] => Array
+                                        (
+                                            [0] => 33554432
+                                        )
+
+                                    [file_validate_extensions] => Array
+                                        (
+                                            [0] => png gif jpg jpeg
+                                        )
+
+                                )
+
+                            [#value_callback] => file_field_widget_value
+                            [#process] => Array
+                                (
+                                    [0] => file_managed_file_process
+                                    [1] => file_field_widget_process
+                                    [2] => image_field_widget_process
+                                )
+
+                            [#progress_indicator] => throbber
+                            [#extended] => 1
+                            [#default_value] => Array
+                                (
+                                    [fid] => 0
+                                    [display] =>
+                                    [description] =>
+                                )
+
+                            [#weight] => 0
+                        )
+
+                    [#file_upload_delta] => 0
+                    [#theme] => file_widget_multiple
+                    [#theme_wrappers] => Array
+                        (
+                            [0] => fieldset
+                        )
+
+                    [#process] => Array
+                        (
+                            [0] => file_field_widget_process_multiple
+                        )
+
+                    [#title] => Image
+                    [#description] =>
+                    [#field_name] => uc_product_image
+                    [#language] => und
+                    [#display_field] => 0
+                    [#file_upload_title] => Add a new file
+                    [#file_upload_description] => Files must be less than 32 MB.
+Allowed file types: png gif jpg jpeg.
+                    [#after_build] => Array
+                        (
+                            [0] => field_form_element_after_build
+                        )
+
+                    [#field_parents] => Array
+                        (
+                        )
+
+                )
+
+            [#access] => 1
+        )
+
+    [taxonomy_catalog] => Array
+        (
+            [#type] => container
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => field-type-taxonomy-term-reference
+                            [1] => field-name-taxonomy-catalog
+                            [2] => field-widget-options-select
+                        )
+
+                )
+
+            [#weight] => -2
+            [#tree] => 1
+            [#language] => und
+            [und] => Array
+                (
+                    [#entity] => stdClass Object
+                        (
+                            [uid] => 1
+                            [name] => admin
+                            [type] => product
+                            [language] => und
+                            [title] =>
+                            [status] => 1
+                            [promote] => 0
+                            [sticky] => 0
+                            [created] => 1463695278
+                            [revision] =>
+                            [model] =>
+                            [list_price] => 0
+                            [cost] => 0
+                            [sell_price] => 0
+                            [weight] => 0
+                            [weight_units] => lb
+                            [length] => 0
+                            [width] => 0
+                            [height] => 0
+                            [length_units] => in
+                            [pkg_qty] => 1
+                            [default_qty] => 1
+                            [shippable] => 0
+                            [ordering] => 0
+                            [comment] => 1
+                            [menu] => Array
+                                (
+                                    [link_title] =>
+                                    [mlid] => 0
+                                    [plid] => 0
+                                    [menu_name] => main-menu
+                                    [weight] => 0
+                                    [options] => Array
+                                        (
+                                        )
+
+                                    [module] => menu
+                                    [expanded] => 0
+                                    [hidden] => 0
+                                    [has_children] => 0
+                                    [customized] => 0
+                                    [parent_depth_limit] => 8
+                                )
+
+                        )
+
+                    [#entity_type] => node
+                    [#bundle] => product
+                    [#field_name] => taxonomy_catalog
+                    [#language] => und
+                    [#field_parents] => Array
+                        (
+                        )
+
+                    [#columns] => Array
+                        (
+                            [0] => tid
+                        )
+
+                    [#title] => Catalog
+                    [#description] =>
+                    [#required] =>
+                    [#delta] => 0
+                    [#type] => select
+                    [#default_value] => Array
+                        (
+                        )
+
+                    [#multiple] =>
+                    [#options] => Array
+                        (
+                            [_none] => - None -
+                            [9] => Bread
+                            [11] => Calzones
+                            [3] => Drinks
+                            [7] => Pasta
+                            [2] => Pizzas
+                            [1] => Salads
+                            [4] => Sandwiches
+                            [10] => Sides
+                            [12] => Specials
+                            [6] => Sweet Goods
+                        )
+
+                    [#value_key] => tid
+                    [#element_validate] => Array
+                        (
+                            [0] => options_field_widget_validate
+                        )
+
+                    [#properties] => Array
+                        (
+                            [strip_tags_and_unescape] => 1
+                            [optgroups] => 1
+                            [empty_option] => option_none
+                            [filter_xss] =>
+                            [strip_tags] =>
+                        )
+
+                    [#after_build] => Array
+                        (
+                            [0] => field_form_element_after_build
+                        )
+
+                )
+
+            [#access] => 1
+        )
+
+    [#pre_render] => Array
+        (
+            [0] => _field_extra_fields_pre_render
+        )
+
+    [#entity_type] => node
+    [#bundle] => product
+    [#form_id] => product_node_form
+    [#type] => form
+    [#build_id] => form-xi7vNgGv8jUXqP9W_8VqGCaSSZ5G1lkmVcAxexatoLk
+    [form_build_id] => Array
+        (
+            [#type] => hidden
+            [#value] => form-xi7vNgGv8jUXqP9W_8VqGCaSSZ5G1lkmVcAxexatoLk
+            [#id] => form-xi7vNgGv8jUXqP9W_8VqGCaSSZ5G1lkmVcAxexatoLk
+            [#name] => form_build_id
+            [#parents] => Array
+                (
+                    [0] => form_build_id
+                )
+
+        )
+
+    [#token] => product_node_form
+    [form_token] => Array
+        (
+            [#id] => edit-product-node-form-form-token
+            [#type] => token
+            [#default_value] => IOf0iZ4A10nNHvDXr3xfQlvSzSbhfwAgoVjp15aQyyM
+            [#parents] => Array
+                (
+                    [0] => form_token
+                )
+
+        )
+
+    [form_id] => Array
+        (
+            [#type] => hidden
+            [#value] => product_node_form
+            [#id] => edit-product-node-form
+            [#parents] => Array
+                (
+                    [0] => form_id
+                )
+
+        )
+
+    [#id] => product-node-form
+    [#method] => post
+    [#action] => /node/add/product
+    [#theme_wrappers] => Array
+        (
+            [0] => form
+        )
+
+    [#tree] =>
+    [#theme] => Array
+        (
+            [0] => product_node_form
+            [1] => node_form
+        )
+
+    [comment_settings] => Array
+        (
+            [#type] => fieldset
+            [#access] => 1
+            [#title] => Comment settings
+            [#collapsible] => 1
+            [#collapsed] => 1
+            [#group] => additional_settings
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => comment-node-settings-form
+                        )
+
+                )
+
+            [#attached] => Array
+                (
+                    [js] => Array
+                        (
+                            [0] => modules/comment/comment-node-form.js
+                        )
+
+                )
+
+            [#weight] => 30
+            [comment] => Array
+                (
+                    [#type] => radios
+                    [#title] => Comments
+                    [#title_display] => invisible
+                    [#parents] => Array
+                        (
+                            [0] => comment
+                        )
+
+                    [#default_value] => 1
+                    [#options] => Array
+                        (
+                            [2] => Open
+                            [1] => Closed
+                            [0] => Hidden
+                        )
+
+                    [2] => Array
+                        (
+                            [#description] => Users with the "Post comments" permission can post comments.
+                        )
+
+                    [1] => Array
+                        (
+                            [#description] => Users cannot post comments.
+                        )
+
+                    [0] => Array
+                        (
+                            [#description] => Comments are hidden from view.
+                            [#access] =>
+                        )
+
+                )
+
+        )
+
+)

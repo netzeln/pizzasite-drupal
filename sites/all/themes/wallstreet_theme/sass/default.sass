@@ -4,6 +4,7 @@
 // Browser Reset
 // -------------
 // For a more complete reset, go to http://developer.yahoo.com/yui/reset/
+@import "_config.sass"
 
 *
   margin: 0
@@ -98,3 +99,18 @@ div.block
       margin: 0
   &:hover .edit
     display: block
+
+ul
+  list-style: none
+  li
+    list-style: none
+
+//button style
+input
+  &[type="submit"]
+    background-color: inherit
+    padding: 1rem
+    border: 3px solid $accent-color
+    border-radius: 10px
+    &:hover
+      background-color: $main-color-hover

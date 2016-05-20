@@ -1,0 +1,32 @@
+<?php
+
+function manager_view_form_alter(&$form, &$form_state, $form_id) {
+    // print_r($form_id);
+    //
+    // print '<pre>';
+    // print_r($form);
+    // print '</pre>';
+
+    if($form_id == 'product_node_form'){
+        $form['base']['shippable']['#type'] = 'hidden';
+        $form['base']['prices']['list_price']['#type'] = 'hidden';
+        $form['base']['prices']['cost']['#type'] = 'hidden';
+        $form['base']['ordering']['#type'] = 'hidden';
+
+
+
+
+    }
+
+    if($form_id == 'pizzas_node_form'){
+        $form['base']['shippable']['#type'] = 'hidden';
+        $form['base']['prices']['list_price']['#type'] = 'hidden';
+        $form['base']['prices']['cost']['#type'] = 'hidden';
+        $form['base']['ordering']['#type'] = 'hidden';
+        // $form['base']['rdf_mapping']['shipping_type'] = 'hidden';
+
+
+
+
+    }
+}

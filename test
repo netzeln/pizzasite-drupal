@@ -1,0 +1,17 @@
+/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
+
+DROP DATABASE JonCROne;
+
+CREATE DATABASE JonCROne;
+
+USE JonCROne;
+
+SOURCE JonCROne.sql;
+
+DROP USER 'oneadmin'@'localhost' IDENTIFIED BY 'oneadmin';
+
+CREATE USER 'oneadmin'@'localhost' IDENTIFIED BY 'oneadmin';
+
+GRANT ALL PRIVILEGES ON * . * TO 'oneadmin'@'localhost';
+
+exit

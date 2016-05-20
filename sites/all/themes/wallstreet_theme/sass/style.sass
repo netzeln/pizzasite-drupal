@@ -1,5 +1,9 @@
 @import "_config.sass"
 
+//variables 
+$main-color: #FBF7E4
+$accent-color: #2F5409
+
 // Font styles.
 body
   background-color: #FBF7E4
@@ -159,12 +163,13 @@ div.status
   border-color: #bbee77
 
 // Region Colors. delete when starting a new theme.
-#header, #footer,
+#header,
 #sidebar-first,
 #sidebar-second,
 #navigation
   background: #FBF7E4
 
+//navigation link and header styling
 #navigation
   display: flex
   ul
@@ -178,6 +183,14 @@ div.status
         &:hover
           text-decoration: none
           border-bottom: solid 9px #FBF7E4
+
+//Twitter styling
+.twitter-status 
+  font-size: 12px
+  margin-left: 1em
+  margin-right: -5em
+
+
 // Import custom styles.
 @import _custom.sass
 

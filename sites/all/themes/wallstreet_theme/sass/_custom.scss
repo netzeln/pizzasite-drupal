@@ -8,3 +8,23 @@
 // Import variables and mixins to be used.
 @import "_config.sass";
 @import "_sprites.sass";
+
+#navigation{
+  display: flex;
+  ul {
+    margin-top: -2em;
+    margin-bottom: 3em;
+    li{
+      padding-left: 2em;
+      a{
+        color: #2F5409;
+        font-size: 16px;
+      	&:hover{
+          text-decoration: none;
+          border-bottom: solid 9px #FBF7E4;    		
+      	}
+      }    	
+    }  	
+  }	
+}
+        

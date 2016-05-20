@@ -123,7 +123,7 @@
     display: block;
     margin-right: 1.69492%;
     width: 66.10169%;
-    margin-left: 20.33898%;
+    margin-left: 13.55932%;
   }
   .two-sidebars #content:last-child {
     margin-right: 0;
@@ -159,7 +159,7 @@
     display: block;
     margin-right: 1.69492%;
     width: 18.64407%;
-    margin-left: -74.57627%;
+    margin-left: -67.79661%;
   }
   #sidebar-first:last-child {
     margin-right: 0;
@@ -191,20 +191,24 @@
     float: left;
     display: block;
     margin-right: 1.69492%;
-    width: 25.42373%;
-    margin-left: 0%;
+    width: 18.64407%;
+    margin-left: 20.33898%;
   }
   #sidebar-second:last-child {
     margin-right: 0;
+  }
+  #sidebar-second h3 {
+    margin-left: 1.5em;
   }
 }
 
 @media screen and (min-width: 60em) {
   .drinks-section {
+    width: 100%;
     float: left;
     display: block;
     margin-right: 1.69492%;
-    width: 42.37288%;
+    width: 38.98305%;
     overflow-x: hidden;
   }
   .drinks-section:last-child {
@@ -214,10 +218,11 @@
 
 @media screen and (min-width: 60em) {
   .salads-section {
+    width: 100%;
     float: left;
     display: block;
     margin-right: 1.69492%;
-    width: 42.37288%;
+    width: 38.98305%;
     overflow-x: hidden;
   }
   .salads-section:last-child {
@@ -227,10 +232,11 @@
 
 @media screen and (min-width: 60em) {
   .pizzas-section {
+    width: 100%;
     float: left;
     display: block;
     margin-right: 1.69492%;
-    width: 42.37288%;
+    width: 38.98305%;
     margin-right: 11px !important;
     overflow-x: hidden;
   }
@@ -241,10 +247,11 @@
 
 @media screen and (min-width: 60em) {
   .sandwiches-section {
+    width: 100%;
     float: left;
     display: block;
     margin-right: 1.69492%;
-    width: 42.37288%;
+    width: 38.98305%;
     overflow-x: hidden;
   }
   .sandwiches-section:last-child {
@@ -254,10 +261,11 @@
 
 @media screen and (min-width: 60em) {
   .calzones-section {
+    width: 100%;
     float: left;
     display: block;
     margin-right: 1.69492%;
-    width: 42.37288%;
+    width: 38.98305%;
     overflow-x: hidden;
   }
   .calzones-section:last-child {
@@ -267,10 +275,11 @@
 
 @media screen and (min-width: 60em) {
   .sides-section {
+    width: 100%;
     float: left;
     display: block;
     margin-right: 1.69492%;
-    width: 42.37288%;
+    width: 38.98305%;
     overflow-x: hidden;
   }
   .sides-section:last-child {
@@ -289,8 +298,19 @@
 }
 
 #footer {
+  background-color: black;
   float: none;
   clear: both;
+}
+#footer p {
+  padding-top: 1.5em;
+  color: white;
+}
+#footer a {
+  color: white;
+}
+#footer a:hover {
+  color: #FBF7E4;
 }
 
 #header,

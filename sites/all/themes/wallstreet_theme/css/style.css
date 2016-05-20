@@ -180,7 +180,7 @@ div.status {
   border-color: #bbee77;
 }
 
-#header, #footer,
+#header,
 #sidebar-first,
 #sidebar-second,
 #navigation {
@@ -206,11 +206,25 @@ div.status {
   border-bottom: solid 9px #FBF7E4;
 }
 
+.twitter-status {
+  font-size: 12px;
+  margin-left: 1em;
+  margin-right: -5em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .drinks-section {
   margin-top: 5em;
 }
 
 .menuItemStuff {
+  font-size: 18px;
+  color: #FBF7E4;
   width: 100%;
   border-bottom: dotted 2px #666;
   height: 1.1em;
@@ -234,6 +248,25 @@ div.status {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+#navigation {
+  display: flex;
+}
+#navigation ul {
+  margin-top: -2em;
+  margin-bottom: 3em;
+}
+#navigation ul li {
+  padding-left: 2em;
+}
+#navigation ul li a {
+  color: #2F5409;
+  font-size: 16px;
+}
+#navigation ul li a:hover {
+  text-decoration: none;
+  border-bottom: solid 9px #FBF7E4;
 }
 
 /*# sourceMappingURL=style.css.map */
