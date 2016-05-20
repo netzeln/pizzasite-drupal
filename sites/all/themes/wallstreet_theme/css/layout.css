@@ -290,8 +290,16 @@
 }
 
 #footer {
+  background-color: black;
+  padding-top: 1em;
   float: none;
   clear: both;
+}
+#footer p {
+  color: white;
+}
+#footer p a {
+  color: #2F5409;
 }
 
 #header,
