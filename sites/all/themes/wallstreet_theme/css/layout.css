@@ -197,6 +197,9 @@
   #sidebar-second:last-child {
     margin-right: 0;
   }
+  #sidebar-second h3 {
+    margin-left: 1.5em;
+  }
 }
 
 @media screen and (min-width: 60em) {

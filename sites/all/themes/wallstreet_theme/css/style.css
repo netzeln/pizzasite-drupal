@@ -208,6 +208,8 @@ div.status {
 
 .twitter-status {
   font-size: 14px;
+  margin-left: 1em;
+  margin-right: -5em;
 }
 
 .drinks-section {
