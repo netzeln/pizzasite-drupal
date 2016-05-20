@@ -1,34 +1,327 @@
-/*
-Error: The line was indented 3 levels deeper than the previous line.
-        on line 33 of sass/layout.sass
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-28:     @include media($desktop)
-29:       @include span-columns(12)
-30: <<<<<<< HEAD
-31: 
-32: =======
-33:       @include shift(3)
-34:       
-35: >>>>>>> 63278a599db802d2b406334882907010845d53a3
-36:   .one-sidebar.sidebar-second &
-37:     // 100% width for mobile devices.
-38:     @include media($mobile)
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-Backtrace:
-sass/layout.sass:33
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:509:in `tree'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:396:in `_to_tree'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/exec/sass_scss.rb:396:in `run'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/exec/sass_scss.rb:62:in `process_result'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/exec/base.rb:52:in `parse'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/exec/base.rb:19:in `parse!'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: The line was indented 3 levels deeper than the previous line.\A         on line 33 of sass/layout.sass\A \A 28:     @include media($desktop)\A 29:       @include span-columns(12)\A 30: <<<<<<< HEAD\A 31: \A 32: =======\A 33:       @include shift(3)\A 34:       \A 35: >>>>>>> 63278a599db802d2b406334882907010845d53a3\A 36:   .one-sidebar.sidebar-second &\A 37:     // 100% width for mobile devices.\A 38:     @include media($mobile)"; }
+@media screen and (min-width: 20em) {
+  .no-sidebars #content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 45em) {
+  .no-sidebars #content {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 100%;
+  }
+  .no-sidebars #content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 60em) {
+  .no-sidebars #content {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 79.66102%;
+  }
+  .no-sidebars #content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20em) {
+  .one-sidebar.sidebar-second #content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 45em) {
+  .one-sidebar.sidebar-second #content {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 74.19355%;
+  }
+  .one-sidebar.sidebar-second #content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 60em) {
+  .one-sidebar.sidebar-second #content {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 59.32203%;
+  }
+  .one-sidebar.sidebar-second #content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20em) {
+  .one-sidebar.sidebar-first #content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 45em) {
+  .one-sidebar.sidebar-first #content {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 74.19355%;
+    margin-left: 25.80645%;
+  }
+  .one-sidebar.sidebar-first #content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 60em) {
+  .one-sidebar.sidebar-first #content {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 79.66102%;
+  }
+  .one-sidebar.sidebar-first #content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20em) {
+  .two-sidebars #content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 45em) {
+  .two-sidebars #content {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 48.3871%;
+    margin-left: 25.80645%;
+  }
+  .two-sidebars #content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 60em) {
+  .two-sidebars #content {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 52.54237%;
+    margin-left: 13.55932%;
+  }
+  .two-sidebars #content:last-child {
+    margin-right: 0;
+  }
+}
+
+#sidebar-first {
+  background-color: #FBF7E4;
+}
+@media screen and (min-width: 20em) {
+  #sidebar-first {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 45em) {
+  #sidebar-first {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 22.58065%;
+    margin-left: -77.41935%;
+  }
+  #sidebar-first:last-child {
+    margin-right: 0;
+  }
+  .sidebar-first #sidebar-first {
+    margin-left: -103.22581%;
+  }
+}
+@media screen and (min-width: 60em) {
+  #sidebar-first {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 18.64407%;
+    margin-left: -81.35593%;
+  }
+  #sidebar-first:last-child {
+    margin-right: 0;
+  }
+  .sidebar-first #sidebar-first {
+    margin-left: -101.69492%;
+  }
+}
+
+@media screen and (min-width: 20em) {
+  #sidebar-second {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 45em) {
+  #sidebar-second {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 22.58065%;
+    margin-left: 0%;
+  }
+  #sidebar-second:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 60em) {
+  #sidebar-second {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 18.64407%;
+    margin-left: 13.55932%;
+  }
+  #sidebar-second:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .drinks-section {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 42.37288%;
+    overflow-x: hidden;
+  }
+  .drinks-section:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .salads-section {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 42.37288%;
+    overflow-x: hidden;
+  }
+  .salads-section:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .pizzas-section {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 42.37288%;
+    margin-right: 2.7em !important;
+    overflow-x: hidden;
+  }
+  .pizzas-section:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .sandwiches-section {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 42.37288%;
+    overflow-x: hidden;
+  }
+  .sandwiches-section:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .calzones-section {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 42.37288%;
+    overflow-x: hidden;
+  }
+  .calzones-section:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .sides-section {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 42.37288%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .sides-section:last-child {
+    margin-right: 0;
+  }
+}
+
+#header {
+  background-color: black !important;
+  padding: 3em;
+}
+@media screen and (min-width: 60em) {
+  #header img {
+    margin-left: 10.16949%;
+  }
+}
+
+#footer {
+  background-color: black;
+  padding-top: 1em;
+  float: none;
+  clear: both;
+}
+#footer p {
+  color: white;
+}
+#footer p a {
+  color: #2F5409;
+}
+
+#header,
+#footer,
+.mission,
+.breadcrumb,
+.node {
+  clear: both;
+}
+
+.inner {
+  padding: 0;
+}
+
+#navigation li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.block .title {
+  color: #2F5409;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=layout.css.map */
