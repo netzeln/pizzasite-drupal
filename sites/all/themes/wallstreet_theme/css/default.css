@@ -105,7 +105,13 @@ ul li {
 }
 
 input[type="submit"] {
-  background-color: #2F5409;
+  background-color: inherit;
+  padding: 1rem;
+  border: 3px solid #2F5409;
+  border-radius: 10px;
+}
+input[type="submit"]:hover {
+  background-color: #DBD1A5;
 }
 
 /*# sourceMappingURL=default.css.map */
