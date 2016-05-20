@@ -236,4 +236,23 @@ div.status {
   box-sizing: border-box;
 }
 
+#navigation {
+  display: flex;
+}
+#navigation ul {
+  margin-top: -2em;
+  margin-bottom: 3em;
+}
+#navigation ul li {
+  padding-left: 2em;
+}
+#navigation ul li a {
+  color: #2F5409;
+  font-size: 16px;
+}
+#navigation ul li a:hover {
+  text-decoration: none;
+  border-bottom: solid 9px #FBF7E4;
+}
+
 /*# sourceMappingURL=style.css.map */
