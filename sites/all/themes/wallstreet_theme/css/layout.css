@@ -231,7 +231,7 @@
     display: block;
     margin-right: 1.69492%;
     width: 42.37288%;
-    margin-right: 11px !important;
+    margin-right: 2.7em !important;
     overflow-x: hidden;
   }
   .pizzas-section:last-child {
@@ -272,6 +272,7 @@
     margin-right: 1.69492%;
     width: 42.37288%;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   .sides-section:last-child {
     margin-right: 0;
