@@ -212,6 +212,13 @@ div.status {
   margin-right: -5em;
 }
 
+#sidebar-second h3 {
+  margin-left: 1.5em;
+}
+#sidebar-second h3:hover {
+  cursor: inherit;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
