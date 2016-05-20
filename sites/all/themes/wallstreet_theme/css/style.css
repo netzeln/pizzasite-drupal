@@ -230,14 +230,14 @@ div.status {
 }
 
 .menuItemStuff {
-  font-size: 18px;
-  color: #FBF7E4;
   width: 100%;
   border-bottom: dotted 2px #666;
   height: 1.1em;
 }
 
 .menuItem {
+  font-size: 18px;
+  color: #FBF7E4;
   background: #FBF7E4;
 }
 
