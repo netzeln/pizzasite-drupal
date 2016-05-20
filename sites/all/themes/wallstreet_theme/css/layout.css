@@ -297,10 +297,10 @@
   padding-top: 1.5em;
   color: white;
 }
-#footer li {
+#footer a {
   color: white;
 }
-#footer li:hover {
+#footer a:hover {
   color: #FBF7E4;
 }
 
