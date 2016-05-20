@@ -28,7 +28,11 @@ function site_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
+<<<<<<< HEAD
   $strongarm->value = 'wallstreet_theme';
+=======
+  $strongarm->value = 'bartik';
+>>>>>>> 63278a599db802d2b406334882907010845d53a3
   $export['theme_default'] = $strongarm;
 
   return $export;

@@ -35,7 +35,10 @@ stylesheets[print][] = css/print.css
 ; Scripts
 scripts[] = js/build/scripts.js
 scripts[] = js/build/modernizr.js
+<<<<<<< HEAD
 scripts[] = js/custom/map_style.js
+=======
+>>>>>>> 63278a599db802d2b406334882907010845d53a3
 
 settings[wallstreet_theme_tabs] = 1
 settings[wallstreet_theme_breadcrumb] = 1

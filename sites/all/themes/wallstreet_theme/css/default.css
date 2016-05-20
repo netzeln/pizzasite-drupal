@@ -1,117 +1,39 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+/*
+Error: Invalid mixin "======".
+        on line 9 of sass/default.sass
 
-* {
-  margin: 0;
-  padding: 0;
-}
+4: // Browser Reset
+5: // -------------
+6: // For a more complete reset, go to http://developer.yahoo.com/yui/reset/
+7: <<<<<<< HEAD
+8: @import "_config.sass"
+9: =======
+10: >>>>>>> 63278a599db802d2b406334882907010845d53a3
+11: 
+12: *
+13:   margin: 0
+14:   padding: 0
 
-.clearfix {
-  display: inline-block;
-}
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-* html .clearfix {
-  height: 1%;
-}
-
-.clearfix {
-  display: block;
-}
-
-.clearleft, .clearl, .cleft {
-  clear: left;
-}
-
-.clearright, .clearr, .cright {
-  clear: right;
-}
-
-.clear, .clearboth, .clearall {
-  clear: both;
-}
-
-.floatleft, .fleft, .floatl {
-  float: left;
-  margin: 0 10px 5px 0;
-}
-
-.floatright, .fright, .floatr {
-  float: right;
-  margin: 0 0 5px 10px;
-}
-
-#skip a:link, #skip a:hover, #skip a:visited {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-#skip a:active, #skip a:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
-
-div.view div.views-admin-links {
-  width: auto;
-}
-
-div.block {
-  position: relative;
-}
-div.block .edit {
-  display: none;
-  position: absolute;
-  right: -20px;
-  top: -5px;
-  z-index: 40;
-  padding: 3px 8px 0;
-  font-size: 10px;
-  line-height: 16px;
-  background-color: white;
-  border: 1px solid #cccccc;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-box-shadow: 0 1px 3px #888888;
-  -webkit-box-shadow: -1px 1px 2px #666666;
-}
-div.block .edit a {
-  display: block;
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-div.block:hover .edit {
-  display: block;
-}
-
-ul {
-  list-style: none;
-}
-ul li {
-  list-style: none;
-}
-
-input[type="submit"] {
-  background-color: inherit;
-  padding: 1rem;
-  border: 3px solid #2F5409;
-  border-radius: 10px;
-}
-input[type="submit"]:hover {
-  background-color: #DBD1A5;
-}
-
-/*# sourceMappingURL=default.css.map */
+Backtrace:
+sass/default.sass:9
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:1070:in `parse_mixin_definition'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:639:in `parse_line'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:525:in `build_tree'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:544:in `block in append_children'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:543:in `each'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:543:in `append_children'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:396:in `_to_tree'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/exec/sass_scss.rb:396:in `run'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.6/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid mixin \"======\".\A         on line 9 of sass/default.sass\A \A 4: // Browser Reset\A 5: // -------------\A 6: // For a more complete reset, go to http://developer.yahoo.com/yui/reset/\A 7: <<<<<<< HEAD\A 8: @import \"_config.sass\"\A 9: =======\A 10: >>>>>>> 63278a599db802d2b406334882907010845d53a3\A 11: \A 12: *\A 13:   margin: 0\A 14:   padding: 0"; }
