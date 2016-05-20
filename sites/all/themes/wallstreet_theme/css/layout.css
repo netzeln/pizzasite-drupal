@@ -293,6 +293,9 @@
   float: none;
   clear: both;
 }
+#footer p {
+  color: white;
+}
 
 #header,
 #footer,
