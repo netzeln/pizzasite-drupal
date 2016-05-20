@@ -294,7 +294,14 @@
   clear: both;
 }
 #footer p {
+  padding-top: 1.5em;
   color: white;
+}
+#footer li {
+  color: white;
+}
+#footer li:hover {
+  color: #FBF7E4;
 }
 
 #header,
